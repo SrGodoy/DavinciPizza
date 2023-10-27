@@ -169,35 +169,35 @@ width: 100%;
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background: url('/img/flyer.jpg');
+  background: url('img/flyer.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-2 {
-  background: url('/img/Caixaspizza.jpg');
+  background: url('img/Caixaspizza.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-3 {
-  background: url('/img/restaurantbanner2jpg.jpg');
+  background: url('img/restaurantbanner2jpg.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-4 {
-  background: url('/img/restaurante.jpg');
+  background: url('img/restaurante.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-5 {
-  background: url('/img/flyer2.jpg');
+  background: url('img/flyer2.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
