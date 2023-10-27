@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  margin-left: 4vw;
+  margin-right: 4vw;
+  color:#000;
+}
+body p{
+  font-family: 'Merriweather', serif;
+  color:white;
+  font-size: 1.2rem;
+  letter-spacing:0.04rem;
+}
+body h2{
+  font-family: 'Italiana', serif;
+  color:#D91136;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.conteudo1 p:first-letter{
+  margin-left: 1.5rem;
+}
+.section-organizacao{
+  border:none;
+  outline:none;
+}
+section{
+  border:none;
+  outline:none;
+}
+
+
+.pizzagrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 3vh;
+  outline: 3px white;
+  padding-bottom: 4vh;
+}
+
+/* Card do cardapio */
+.produtoinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  align-items: center;
+}
+.produtoinfo h2{
+  margin: 0;
+  padding: 0;
+}
+.titulo {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 4rem;
+}
+
+
+.produto1 {
+display: flex;
+justify-self: center;
+width:auto;
+height: auto;
+
+font-family: 'Merriweather', serif;
+}
+
+.box {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 0 2px 0 #ffffff; 
+}
+.produtoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+.produtoimg img {
+    width: 40vw;
+    height: 24vh;
+    background-color: #f4f4f4;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+
+h1 {
+text-align: center;
+font-weight: bold;
+font-size: 1.5rem;
+color: #ffffff;
+font-family: 'Merriweather', serif;
+}
+.select p{
+  color: #ffffff;
+}
+
+.preco {
+text-align: center;
+padding: 0;
+margin: 0;
+font-size: 1.5rem;
+font-weight: bolder;
+color: #048C3F;
+}
+
+
+
+.descricao {
+  height: 5vh;
+  width: auto;
+  padding-top: 1vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin: 0;
+  text-align: center;
+font-weight: bold;
+color: #ffffff;
+font-size: 0.89rem;
+}
+.descricao1 {
+ height:1.2em;
+  padding: 0;
+  margin-top: 2vh;
+  text-align: center;
+font-weight: bold;
+color: #D91136;
+font-size: 1.2em;
+}
+.borda select{
+  font-size: 1.5rem;
+}
+
+
+.organizacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.organizacao button {
+  margin-top: 2vh; 
+}
+
+
+
+select.borda {  
+border: 2px solid #ffffff;
+color: #fff;
+border-radius: 5px;
+font-family: 'Merriweather', serif;
+background-color: #000;
+}
+.borda{
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.produtoinfo{
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+
+.box button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  margin-bottom: 3px;
+  text-align: center;
+  background: #048C3F;
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  &:hover {
+    background: #D91136;
+  }
+}
+.espaco{
+  height:2vh;
+}
+
+
+
+
+
+/* section */
+.section {
+  display: none;
+  outline:none;
+  border: none;
+}
+
+.section.active {
+  display: block;
+  outline:none;
+  border: none;
+}
+
+.section-organizacao{
+  display: grid;
+  outline:none;
+  grid-template-rows: auto;
+  align-content: center;
+  border: none;
+}
+.menu-item{
+  color:#fff;
+  background-color: #000;
+  outline: none;
+  height: 8vh;
+  font-size: 1.3rem;
+  font-family: 'Merriweather', serif;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+/* Media query */
+@media only screen and (min-width: 768px) {
+  
+  .pizzagrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+  }
+  .produto1 {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height: auto;
+  }
+.box{
+  width: 30vw;
+}
+.section-organizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+
+}
+.menu-item{
+  font-size: 2rem;
+}
+.box button {
+  height: 5vh;
+
+
+}
+.descricao{
+  font-size: 1.4rem;
+}
+
+}

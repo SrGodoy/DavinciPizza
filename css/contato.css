@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  margin: 4vw;
+  color:#000;
+}
+body p{
+  font-family: 'Merriweather', serif;
+  color:white;
+  font-size: 1.2rem;
+  letter-spacing:0.04rem;
+}
+.Conteudo1 p:first-letter{
+  margin-left: 1.5rem;
+}
+.Conteudo1 p{
+  margin-bottom: 0px;
+  padding-bottom: 1px;
+  text-align: justify;
+}
+.Conteudo2 h2{
+  margin-top: 0px;
+  margin-bottom: 3vh;
+  padding-bottom: 0px;
+}
+body h2{
+  font-family: 'Italiana', serif;
+  color:#D91136;
+  font-size: 2rem;
+  text-align: center;
+
+}
+/* card */
+  .card1{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+
+  
+  .rating {
+    margin-left: auto;
+    font-size: 1.2rem;
+  }
+  
+  .comment {
+    font-size: 1.1rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .card1 {
+      padding: 30px;
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .avatar {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .usuario {
+      font-size: 1.2rem;
+    }
+  
+    .rating {
+      font-size: 1.5rem;
+    }
+  
+    .comment {
+      font-size: 1.3rem;
+    }
+    .card1{
+      width: auto;
+    }
+
+  }
