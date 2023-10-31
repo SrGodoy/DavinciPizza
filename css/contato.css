@@ -60,6 +60,15 @@ body h2{
     margin-right: 10px;
   }
   
+.formulario label{
+  color: white;
+} 
+  
+  h3{
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
 
   
   .rating {
@@ -70,6 +79,87 @@ body h2{
   .comment {
     font-size: 1.1rem;
   }
+
+/* Campo de Avaliação */
+
+form {
+  margin-top: 5vh;
+  background-color:black;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+ 
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin: 1vw 0;
+  text-align: left;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4vh;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 73vw;
+  padding: 2vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 76vw;
+  height: 27vh;
+  
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 10px 20px;
+  background-color:#D91136;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #048C3F;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button:disabled,
+input[type="number"]::-webkit-outer-spin-button:disabled {
+  display: none;
+}
+
+
   
   @media only screen and (min-width: 768px) {
     .card1 {
