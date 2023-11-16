@@ -81,6 +81,9 @@ body h2{
   }
 
 /* Campo de Avaliação */
+#formulario{
+  font-size:3vh;
+}
 
 form {
   margin-top: 5vh;
@@ -115,8 +118,10 @@ input[type="number"] {
   padding: 2vh;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 0.8rem;
   
 }
+
 
 input[type="number"] {
   width: 50px;
@@ -126,6 +131,7 @@ textarea {
   border-radius: 5px;
   width: 76vw;
   height: 27vh;
+  font-size: 1rem;
   
 }
 
