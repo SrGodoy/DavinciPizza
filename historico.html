@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navbarjs.css">
-    <link rel="stylesheet" href="css/carrinho.css">
-    <script src="js/carrinho.js" defer></script>
+    <link rel="stylesheet" href="css/historico.css">
+    <script src="/js/historico.js" defer></script>
     <title>Vinci's Pizzas</title>
 </head>
 
@@ -36,19 +36,29 @@ por ser responsivo ele se contrai e fica no formato conhecido como hamburger">
 </nav>
 </header>
 <script src="js/navbar.js" defer></script>
-
  
-<h2>Carrinho de Compra</h2>
+<h2>Compras Realizadas</h2>
+<div class="login-container" id="loginContainer">
+  <h2>Login</h2>
+  <form id="loginForm">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required>
 
-<div id="carrinho" name="carrinhocompra">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="button" onclick="login()">Login</button>
+  </form>
+  <p id="loginMessage"></p>
 </div>
 
-
-
-<div id="cardtot"><p>Total: R$0.00</p></div>
-<div class="remover">
-<button id="btn-finalizar">Finalizar Compra</button>
+<div class="dashboard-container" id="dashboardContainer">
+<div id="compras_Realizadas">
 </div>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
 </body>
 
           <footer>
